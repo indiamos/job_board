@@ -1,0 +1,8 @@
+<h1><%= @job.title %></h1>
+
+<p><%= @job.description %></p>
+
+<ul class="show-buttons">
+  <li><%= link_to "Edit", edit_job_path(@job) %></li>
+  <li><%= link_to "Remove", @job, method: :delete, data: { confirm: "Are you sure?" } %></li>
+</ul>
