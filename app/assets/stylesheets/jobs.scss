@@ -1,3 +1,41 @@
 // Place all the styles related to the jobs controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+a {
+  color: #336699;
+  text-decoration: none;
+  hyphens: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    // border: 1px solid #666;
+}
+
+td, th {
+  border: 1px solid orange;
+  padding: 5px;
+}
+
+th {
+  text-align: left;
+}
+
+tr:first-child td, tr:first-child th {
+  border-top: none;
+}
+
+tr:last-child td, tr:last-child th {
+  border-bottom: none;
+}
+
+td:first-child, th:first-child {
+  border-left: none;
+}
+
+td:last-child, th:last-child {
+  border-right: none;
+}
+

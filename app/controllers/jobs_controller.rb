@@ -1,5 +1,6 @@
 class JobsController < ApplicationController
   def index
+    @jobs = Job.all
   end
 
   def new
@@ -18,7 +19,7 @@ class JobsController < ApplicationController
     redirect_to jobs_path
   end
 
-  private
+  private # Every method below this keyword is private; everything above is public; there is also `protected`.
 
   def job_params
     params.require(:job).permit(:title, :description)
