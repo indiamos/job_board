@@ -1,0 +1,15 @@
+<h1>Add a job</h1>
+
+<%= form_for @job do |f| %>
+  <div>
+    <%= f.label :title %>
+    <%= f.text_field :title, title: 'This is a helpful tooltip that is almost impossible to trigger' %>
+  </div>
+  <div>
+    <%= f.label :description %>
+    <%= f.text_area :description, size: '60x6' %>
+  </div>
+  <div>
+    <%= f.submit %>
+  </div>
+<% end %>
